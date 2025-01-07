@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Silkscreen';
+    overflow: hidden;
+
+}
+
+.content-calculator {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.calculator {
+
+    width: 500px;
+    height: 600px;
+    border: solid black 3px;
+    border-radius: 60px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 20px 20px 20px black;
+}
+
+.screen {
+
+    width: 100%;
+    height: 30%;
+    border: dotted black 4px;
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-bottom: 5%;
+    background-color: rgb(155, 253, 177);
+
+
+}
+
+.text-screen {
+
+    font-size: 3em;
+
+}
+
+.content {
+
+    display: flex;
+    width: 100%;
+    height: 95%;
+    
+    
+}
+
+.numbers {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    height: 70%;
+    width: 100%;
+
+}
+
+.number {
+
+    border: solid 1px black;
+    background-color: #3A86FF;
+    color: #E9ECEF;
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.3em;
+    
+
+}
+
+.number:hover {
+
+    background-color: #0664fc;
+
+}
+
+.number-0 {
+
+    border: black 1px solid;
+    width: 70%;
+    height: 10%;
+
+}
+
+
+.content-operations {
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    width: 30%;
+    height: 70%; 
+    
+}
+
+.operations {
+
+    border: 1px solid black;
+    background-color: #00ADB5;
+    cursor: pointer;
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+
+}
+
+.operations:hover {
+
+    background-color: #02dde9;
+
+}
+
+#one {
+
+    border-top-left-radius: 40px;
+
+}
+
+#cancel {
+
+    border-top-right-radius: 40px;
+
+}
+
+#division {
+
+    border-bottom-right-radius: 40px;
+
+}
+
+#on-off {
+
+    border-bottom-left-radius: 40px;
+    background-color: red;
+
+
+}
+
+#equal {
+
+    background-color: #ff55aa;
+
+}
+
+#equal,
+#on-off {
+
+    border: solid 1px black;
+    color: #E9ECEF;
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.3em;
+
+}
+
+#equal:hover {
+
+    background-color: #FF007F;
+
+}
+
+.my-name {
+
+    position: absolute;
+    top: 95%;
+    right: 0;
+
+}
